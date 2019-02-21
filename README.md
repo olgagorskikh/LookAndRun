@@ -16,15 +16,15 @@ The architecture of the application is quite common, the whole structure is divi
 
 As the service is quite simple, the database contains only two tables:
 - Games 
-          ```
+```
           Id:int- game identifier
           Data:int - game date
           Name:nvarchar(MAX) - game name
           Event:nvarchar(MAX) - corresponding Facebook event link 
           Photo:nvarchar(MAX) - corresponding Facebook photoalbum link
-          ```
+```
 - Teams 
-          ```
+```
           Id:int - team identifier
           GameId:int - related game identifier
           Members:int - number of team members
@@ -32,4 +32,4 @@ As the service is quite simple, the database contains only two tables:
           Language:nvarchar(MAX) - preferable language for the team
           Mobile:nvarchar(MAX) - contact phone number of the team
           Result:nvarchar(MAX) - final result of the game for the team
-          ```
+```
