@@ -1,0 +1,19 @@
+G:\Дивноморск сайт\Site\WebApplication1\WebApplication1\bin\WebApplication1.dll
+G:\Дивноморск сайт\Site\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+G:\Дивноморск сайт\Site\WebApplication1\WebApplication1\obj\Debug\ResolveAssemblyReference.cache
+G:\Дивноморск сайт\Site\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+G:\Дивноморск сайт\Site\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+H:\Дивноморск сайт\Site\WebApplication1\WebApplication1\bin\WebApplication1.dll
+H:\Дивноморск сайт\Site\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+H:\Дивноморск сайт\Site\WebApplication1\WebApplication1\obj\Debug\ResolveAssemblyReference.cache
+H:\Дивноморск сайт\Site\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+H:\Дивноморск сайт\Site\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+I:\Дивноморск сайт\Site\WebApplication1\WebApplication1\bin\WebApplication1.dll
+I:\Дивноморск сайт\Site\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+I:\Дивноморск сайт\Site\WebApplication1\WebApplication1\obj\Debug\ResolveAssemblyReference.cache
+I:\Дивноморск сайт\Site\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+I:\Дивноморск сайт\Site\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\Olga\Dropbox\Projects\C#\CreateToday\WebApplication1\WebApplication1\bin\WebApplication1.dll
+C:\Users\Olga\Dropbox\Projects\C#\CreateToday\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\Users\Olga\Dropbox\Projects\C#\CreateToday\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\Olga\Dropbox\Projects\C#\CreateToday\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb

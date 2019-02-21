@@ -1,0 +1,192 @@
+@import "variables.less";
+.clearfix {
+    &:after {
+        display: table;
+        clear: both;
+        content: '';
+    }
+}
+.font11 {
+    font-size: 0.7857rem;
+}
+
+.font13 {
+    font-size: 0.9285rem;
+}
+
+.font14 {
+    font-size: 1rem;
+}
+.font15 {
+    font-size: 1.0714rem;
+}
+.font16 {
+    font-size: 1.1428rem;
+}
+
+.font18 {
+    font-size: 1.2857rem;
+}
+
+.font20 {
+    font-size: 1.4285rem;
+}
+.font24 {
+    font-size: 1.7143rem;
+}
+.font30 {
+    font-size: 2.1428rem;
+}
+.font36 {
+    font-size: 2.5714rem;
+}
+
+.font42 {
+    font-size: 3rem;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.tc {
+    text-align: center;
+}
+
+.tl {
+    text-align: left;
+}
+
+.tr {
+    text-align: right;
+}
+
+.dib {
+    display: inline-block;
+}
+
+.vam {
+    vertical-align: middle;
+}
+
+.vat {
+    vertical-align: top;
+}
+
+.vab {
+    vertical-align: bottom;
+}
+
+.mb1em {
+    margin-bottom: 1rem;
+}
+
+.mb2em {
+    margin-bottom: 2rem;
+}
+
+.mb3em {
+    margin-bottom: 3rem;
+}
+
+.mb4em {
+    margin-bottom: 4rem;
+}
+
+.mt1em {
+    margin-top: 1rem;
+}
+
+.mt2em {
+    margin-top: 2rem;
+}
+
+.mt3em {
+    margin-top: 3rem;
+}
+
+.mt4em {
+    margin-top: 4rem;
+}
+
+.mt5em {
+    margin-top: 5rem;
+}
+
+.ml1em {
+    margin-left: 1rem;
+}
+
+.ml2em {
+    margin-left: 2rem;
+}
+
+.ml3em {
+    margin-left: 3rem;
+}
+
+.ml4em {
+    margin-left: 4rem;
+}
+
+.mr05em {
+    margin-right: 0.5rem;
+}
+.mr1em {
+    margin-right: 1rem;
+}
+
+.mr2em {
+    margin-right: 2rem;
+}
+
+.mr3em {
+    margin-right: 3rem;
+}
+
+.mr4em {
+    margin-right: 4rem;
+}
+
+.mr5em {
+    margin-right: 5rem;
+}
+
+.mr6em {
+    margin-right: 6rem;
+}
+
+.bold {
+    font-weight: 700;
+}
+.blue {
+    color: @blue;
+}
+.grey {
+    color: @grey;
+}
+.white {
+    color: @white;
+}
+.black {
+    color: @black;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+
+.drop-shadow (@x: 0, @y: 1px, @blur: 2px, @spread: 0, @alpha: 0.25) {
+    -webkit-box-shadow: @x @y @blur @spread rgba(0, 0, 0, @alpha);
+    -moz-box-shadow: @x @y @blur @spread rgba(0, 0, 0, @alpha);
+    box-shadow: @x @y @blur @spread rgba(0, 0, 0, @alpha);
+}
+
+.text-shadow (@string: 0 1px 3px rgba(0, 0, 0, 0.25)) {
+    text-shadow: @string;
+}

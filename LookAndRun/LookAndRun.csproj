@@ -1,0 +1,631 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8AB49FD3-D989-4E4F-8F5A-48148893BDEB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication1</RootNamespace>
+    <AssemblyName>WebApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>.\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xtra">
+      <HintPath>.\itextsharp.xtra.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\helpers.css" />
+    <Content Include="css\new.css" />
+    <Content Include="css\normalize.css" />
+    <Content Include="css\responsive.css" />
+    <Content Include="css\styles.css" />
+    <Content Include="css\variables.css" />
+    <Content Include="Pics\animals.JPG" />
+    <Content Include="Pics\Anton.PNG" />
+    <Content Include="Pics\Arrows.PNG" />
+    <Content Include="Pics\bird.jpg" />
+    <Content Include="Pics\bridge.PNG" />
+    <Content Include="Pics\findme.jpg" />
+    <Content Include="Pics\forces.JPG" />
+    <Content Include="Pics\kaisa.jpg" />
+    <Content Include="Pics\mac.jpg" />
+    <Content Include="Pics\MapTask3.PNG" />
+    <Content Include="Pics\Mich.PNG" />
+    <Content Include="Pics\Mich2.PNG" />
+    <Content Include="Pics\notes.png" />
+    <Content Include="Album21052016.aspx" />
+    <Content Include="Album29052016.aspx" />
+    <Content Include="DA\css\helpers.css" />
+    <Content Include="DA\css\new.css" />
+    <Content Include="DA\css\normalize.css" />
+    <Content Include="DA\css\responsive.css" />
+    <Content Include="DA\css\styles.css" />
+    <Content Include="DA\css\variables.css" />
+    <Content Include="img\coming-games.jpg" />
+    <Content Include="img\favicon.ico" />
+    <Content Include="img\flag-en.png" />
+    <Content Include="img\flag-ru.png" />
+    <Content Include="img\ico-arrow-right.png" />
+    <Content Include="img\ico-close.png" />
+    <Content Include="img\ico-facebook.png" />
+    <Content Include="img\ico-mail.png" />
+    <Content Include="img\ico-play.png" />
+    <Content Include="img\ico-sandwich.png" />
+    <Content Include="img\ico-slider-left.png" />
+    <Content Include="img\ico-slider-right.png" />
+    <Content Include="img\ico-social-fb.png" />
+    <Content Include="img\ico-social-insta.png" />
+    <Content Include="img\ico-social-vk.png" />
+    <Content Include="img\logo-bg.png" />
+    <Content Include="img\logo-create-today.png" />
+    <Content Include="img\logo-dozor.png" />
+    <Content Include="img\logo-main-dark.png" />
+    <Content Include="img\logo-main.png" />
+    <Content Include="img\logo-small.png" />
+    <Content Include="img\main-bg.jpg" />
+    <Content Include="img\main-content-img.jpg" />
+    <Content Include="img\main-img.jpg" />
+    <Content Include="img\map-marker.png" />
+    <Content Include="img\partner-into-finland.png" />
+    <Content Include="img\partner-pro-helsinki.png" />
+    <Content Include="img\registration3.jpg" />
+    <Content Include="img\results.jpg" />
+    <Content Include="img\rules.jpg" />
+    <Content Include="img\team-ct.jpg" />
+    <Content Include="img\team-gorskikh.jpg" />
+    <Content Include="img\team-korolev.jpg" />
+    <Content Include="img\team-selezniov.jpg" />
+    <Content Include="img\video-preview1.jpg" />
+    <Content Include="js\blank.gif" />
+    <Content Include="js\fancybox_loading%402x.gif" />
+    <Content Include="js\fancybox_loading.gif" />
+    <Content Include="js\fancybox_overlay.png" />
+    <Content Include="js\fancybox_sprite%402x.png" />
+    <Content Include="js\fancybox_sprite.png" />
+    <Content Include="js\jquery.fancybox.css" />
+    <Content Include="js\jquery.fancybox.js" />
+    <Content Include="js\jquery-1.12.3.min.js" />
+    <Content Include="js\jquery.bxslider.min.js" />
+    <Content Include="js\jquery.validate.min.js" />
+    <Content Include="js\scripts.js" />
+    <Content Include="LastResults.aspx" />
+    <Content Include="Pics\Fourth.JPG" />
+    <Content Include="Pics\Game6.jpg" />
+    <Content Include="Pics\Larin.png" />
+    <Content Include="Pics\president.jpg" />
+    <Content Include="Pics\RiddleEgypt.JPG" />
+    <Content Include="Pics\Second1.JPG" />
+    <Content Include="Pics\Second2.JPG" />
+    <Content Include="Pics\Six.jpg" />
+    <Content Include="Pics\stop.png" />
+    <Content Include="Pics\Task2.JPG" />
+    <Content Include="Pics\Task22.jpg" />
+    <Content Include="Pics\Task6.JPG" />
+    <Content Include="Pics\Third.JPG" />
+    <Content Include="Pics\tori.png" />
+    <Content Include="Pics\utca.png" />
+    <Content Include="Photos.aspx" />
+    <Content Include="Pics\Aikapiha.PNG" />
+    <Content Include="Pics\Alpha.jpg" />
+    <Content Include="Pics\Back.jpg" />
+    <Content Include="Pics\Bubbles.png" />
+    <Content Include="Pics\Car.PNG" />
+    <Content Include="Pics\Clock.PNG" />
+    <Content Include="Pics\Coord.PNG" />
+    <Content Include="Pics\CT.jpg" />
+    <Content Include="Pics\delete1.png" />
+    <Content Include="Pics\Dzr1.jpg" />
+    <Content Include="Pics\Dzr2.jpg" />
+    <Content Include="Pics\Edit1.png" />
+    <Content Include="Pics\EN.png" />
+    <Content Include="Pics\favicon.ico" />
+    <Content Include="Pics\Finish.png" />
+    <Content Include="Pics\Guess.png" />
+    <Content Include="Pics\Hard.PNG" />
+    <Content Include="Pics\Hard7.JPG" />
+    <Content Include="Pics\HardRU.PNG" />
+    <Content Include="Pics\HardTV1.PNG" />
+    <Content Include="Pics\Header3.png" />
+    <Content Include="Pics\Icon.ico" />
+    <Content Include="Pics\IF2.jpg" />
+    <Content Include="Pics\Kids.jpg" />
+    <Content Include="Pics\Krauta.PNG" />
+    <Content Include="Pics\Lady.PNG" />
+    <Content Include="Pics\LeftPoster3.png" />
+    <Content Include="Pics\LVrB5AXuFjw.jpg" />
+    <Content Include="Pics\Man.PNG" />
+    <Content Include="Pics\Map.jpg" />
+    <Content Include="Pics\Map.png" />
+    <Content Include="Pics\Monument.PNG" />
+    <Content Include="Pics\OlgaGorskikh.jpg" />
+    <Content Include="Pics\PartAd.PNG" />
+    <Content Include="Pics\PavelSelezniov.jpg" />
+    <Content Include="Pics\Photographer.jpg" />
+    <Content Include="Pics\Pro.jpg" />
+    <Content Include="Pics\RU.png" />
+    <Content Include="Pics\Ruo.PNG" />
+    <Content Include="Pics\Ruoh.png" />
+    <Content Include="Pics\Select1.png" />
+    <Content Include="Pics\Sharada.jpg" />
+    <Content Include="Pics\Sornainen.JPG" />
+    <Content Include="Pics\Stadium.PNG" />
+    <Content Include="Pics\StudentHouse.png" />
+    <Content Include="Pics\Sybellius.jpg" />
+    <Content Include="Pics\Task1.jpg" />
+    <Content Include="Pics\Task4.jpg" />
+    <Content Include="Pics\User.png" />
+    <Content Include="Rules.aspx" />
+    <Content Include="Scripts\custom.js" />
+    <Content Include="Scripts\jquery.effect.slide.js" />
+    <Content Include="Scripts\jquery.timeentry.js" />
+    <Content Include="Scripts\jquery.ui.core.js" />
+    <Content Include="Scripts\jquery.ui.datepicker-ru.js" />
+    <Content Include="Scripts\jquery.ui.datepicker.js" />
+    <Content Include="Scripts\jquery.ui.widget.js" />
+    <Content Include="Scripts\select.js" />
+    <Content Include="Styles\jquery.timeentry.css" />
+    <Content Include="Styles\jquery.ui.css" />
+    <Content Include="Styles\jquery.ui.datepicker.css" />
+    <Content Include="index.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Styles\Style.css" />
+    <Content Include="Registration.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="ComingSoon.aspx" />
+    <Content Include="Album11062016.aspx" />
+    <Content Include="Album29042016.aspx" />
+    <Content Include="Album03042016.aspx" />
+    <Content Include="Album16042016.aspx" />
+    <Content Include="Album14052016.aspx" />
+    <Content Include="Album02072016.aspx" />
+    <Content Include="Album21072016.aspx" />
+    <Content Include="Album21082016.aspx" />
+    <Content Include="Album28082016.aspx" />
+    <Content Include="Album04092016.aspx" />
+    <Content Include="Album11092016.aspx" />
+    <Content Include="Album25092016.aspx" />
+    <Content Include="Album16102016.aspx" />
+    <Content Include="Album05112016.aspx" />
+    <Content Include="Album10122016.aspx" />
+    <Content Include="Album19032017.aspx" />
+    <Content Include="Album02042017.aspx" />
+    <Content Include="Album23042017.aspx" />
+    <Content Include="Album07052017.aspx" />
+    <Content Include="Album02062017.aspx" />
+    <Content Include="Album16062017.aspx" />
+    <Content Include="Album07072017.aspx" />
+    <Content Include="Album08092017.aspx" />
+    <Content Include="Album22092017.aspx" />
+    <Content Include="Album20102017.aspx" />
+    <Content Include="Album03112017.aspx" />
+    <Content Include="Album06052018.aspx" />
+    <Content Include="Album03062018.aspx" />
+    <Content Include="Album29062018.aspx" />
+    <Content Include="Album03082018.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Album21052016.aspx.cs">
+      <DependentUpon>Album21052016.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Album21052016.aspx.designer.cs">
+      <DependentUpon>Album21052016.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Album29052016.aspx.cs">
+      <DependentUpon>Album29052016.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Album29052016.aspx.designer.cs">
+      <DependentUpon>Album29052016.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BL\Entities\Category.cs" />
+    <Compile Include="BL\Entities\Division.cs" />
+    <Compile Include="BL\Entities\Person.cs" />
+    <Compile Include="BL\Entities\Product.cs" />
+    <Compile Include="BL\Entities\Team.cs" />
+    <Compile Include="BL\Entities\Game.cs" />
+    <Compile Include="DA\DAO\Interfaces\IProductDAO.cs" />
+    <Compile Include="DA\DAO\Managers\PersonManager.cs" />
+    <Compile Include="DA\DAO\Managers\ProductManager.cs" />
+    <Compile Include="DA\DAO\Managers\TeamManeger.cs" />
+    <Compile Include="DA\DAO\Managers\GameManager.cs" />
+    <Compile Include="DA\DAOFactory.cs" />
+    <Compile Include="DA\DAO\Interfaces\IPersonDAO.cs" />
+    <Compile Include="DA\DAO\Interfaces\ITeamDAO.cs" />
+    <Compile Include="DA\DAO\Interfaces\IGameDAO.cs" />
+    <Compile Include="DA\DAO\PersonDAOrdb.cs" />
+    <Compile Include="DA\DAO\ProductDAOrdb.cs" />
+    <Compile Include="DA\DAO\TeamDAOrdb.cs" />
+    <Compile Include="DA\DAO\GameDAOrdb.cs" />
+    <Compile Include="DA\DBHelpercs.cs" />
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="LastResults.aspx.cs">
+      <DependentUpon>LastResults.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LastResults.aspx.designer.cs">
+      <DependentUpon>LastResults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Photos.aspx.cs">
+      <DependentUpon>Photos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Photos.aspx.designer.cs">
+      <DependentUpon>Photos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Rules.aspx.cs">
+      <DependentUpon>Rules.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Rules.aspx.designer.cs">
+      <DependentUpon>Rules.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ComingSoon.aspx.cs">
+      <DependentUpon>ComingSoon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ComingSoon.aspx.designer.cs">
+      <DependentUpon>ComingSoon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Album11062016.aspx.cs">
+      <DependentUpon>Album11062016.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Album11062016.aspx.designer.cs">
+      <DependentUpon>Album11062016.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Album29042016.aspx.cs">
+      <DependentUpon>Album29042016.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Album29042016.aspx.designer.cs">
+      <DependentUpon>Album29042016.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Album03042016.aspx.cs">
+      <DependentUpon>Album03042016.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Album03042016.aspx.designer.cs">
+      <DependentUpon>Album03042016.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Album16042016.aspx.cs">
+      <DependentUpon>Album16042016.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Album16042016.aspx.designer.cs">
+      <DependentUpon>Album16042016.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Album14052016.aspx.cs">
+      <DependentUpon>Album14052016.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Album14052016.aspx.designer.cs">
+      <DependentUpon>Album14052016.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Album02072016.aspx.cs">
+      <DependentUpon>Album02072016.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Album02072016.aspx.designer.cs">
+      <DependentUpon>Album02072016.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Album21072016.aspx.cs">
+      <DependentUpon>Album21072016.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Album21072016.aspx.designer.cs">
+      <DependentUpon>Album21072016.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Album21082016.aspx.cs">
+      <DependentUpon>Album21082016.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Album21082016.aspx.designer.cs">
+      <DependentUpon>Album21082016.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Album28082016.aspx.cs">
+      <DependentUpon>Album28082016.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Album28082016.aspx.designer.cs">
+      <DependentUpon>Album28082016.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Album04092016.aspx.cs">
+      <DependentUpon>Album04092016.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Album04092016.aspx.designer.cs">
+      <DependentUpon>Album04092016.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Album11092016.aspx.cs">
+      <DependentUpon>Album11092016.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Album11092016.aspx.designer.cs">
+      <DependentUpon>Album11092016.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Album25092016.aspx.cs">
+      <DependentUpon>Album25092016.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Album25092016.aspx.designer.cs">
+      <DependentUpon>Album25092016.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Album16102016.aspx.cs">
+      <DependentUpon>Album16102016.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Album16102016.aspx.designer.cs">
+      <DependentUpon>Album16102016.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Album05112016.aspx.cs">
+      <DependentUpon>Album05112016.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Album05112016.aspx.designer.cs">
+      <DependentUpon>Album05112016.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Album10122016.aspx.cs">
+      <DependentUpon>Album10122016.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Album10122016.aspx.designer.cs">
+      <DependentUpon>Album10122016.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Album19032017.aspx.cs">
+      <DependentUpon>Album19032017.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Album19032017.aspx.designer.cs">
+      <DependentUpon>Album19032017.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Album02042017.aspx.cs">
+      <DependentUpon>Album02042017.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Album02042017.aspx.designer.cs">
+      <DependentUpon>Album02042017.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Album23042017.aspx.cs">
+      <DependentUpon>Album23042017.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Album23042017.aspx.designer.cs">
+      <DependentUpon>Album23042017.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Album07052017.aspx.cs">
+      <DependentUpon>Album07052017.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Album07052017.aspx.designer.cs">
+      <DependentUpon>Album07052017.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Album02062017.aspx.cs">
+      <DependentUpon>Album02062017.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Album02062017.aspx.designer.cs">
+      <DependentUpon>Album02062017.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Album16062017.aspx.cs">
+      <DependentUpon>Album16062017.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Album16062017.aspx.designer.cs">
+      <DependentUpon>Album16062017.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Album07072017.aspx.cs">
+      <DependentUpon>Album07072017.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Album07072017.aspx.designer.cs">
+      <DependentUpon>Album07072017.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Album08092017.aspx.cs">
+      <DependentUpon>Album08092017.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Album08092017.aspx.designer.cs">
+      <DependentUpon>Album08092017.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Album22092017.aspx.cs">
+      <DependentUpon>Album22092017.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Album22092017.aspx.designer.cs">
+      <DependentUpon>Album22092017.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Album20102017.aspx.cs">
+      <DependentUpon>Album20102017.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Album20102017.aspx.designer.cs">
+      <DependentUpon>Album20102017.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Album03112017.aspx.cs">
+      <DependentUpon>Album03112017.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Album03112017.aspx.designer.cs">
+      <DependentUpon>Album03112017.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Album06052018.aspx.cs">
+      <DependentUpon>Album06052018.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Album06052018.aspx.designer.cs">
+      <DependentUpon>Album06052018.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Album03062018.aspx.cs">
+      <DependentUpon>Album03062018.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Album03062018.aspx.designer.cs">
+      <DependentUpon>Album03062018.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Album29062018.aspx.cs">
+      <DependentUpon>Album29062018.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Album29062018.aspx.designer.cs">
+      <DependentUpon>Album29062018.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Album03082018.aspx.cs">
+      <DependentUpon>Album03082018.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Album03082018.aspx.designer.cs">
+      <DependentUpon>Album03082018.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Albums\21052016\" />
+    <Folder Include="App_Data\" />
+    <Folder Include="js\fancybox\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Site.Master.en-US.resx" />
+    <Content Include="App_LocalResources\Site.Master.ru-RU.resx" />
+    <Content Include="App_LocalResources\Site.Master.resx" />
+    <Content Include="App_LocalResources\Registration.aspx.en-US.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Registration.aspx.ru-RU.resx" />
+    <Content Include="App_LocalResources\Registration.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\LastResults.aspx.resx" />
+    <Content Include="App_LocalResources\LastResults.aspx.en-US.resx" />
+    <Content Include="App_LocalResources\LastResults.aspx.ru-RU.resx" />
+    <Content Include="App_LocalResources\ComingSoon.aspx.en-US.resx" />
+    <Content Include="App_LocalResources\ComingSoon.aspx.ru-RU.resx" />
+    <Content Include="App_LocalResources\ComingSoon.aspx.resx" />
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DA\css\less\helpers.less" />
+    <None Include="DA\css\less\responsive.less" />
+    <None Include="DA\css\less\styles.less" />
+    <None Include="DA\css\less\variables.less" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49283</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

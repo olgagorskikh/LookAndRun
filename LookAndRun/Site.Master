@@ -1,0 +1,344 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="Dozor.SiteMaster" %>
+
+<html xmlns="http://www.w3.org/1999/xhtml" runat="server">
+
+<head id="Head1" runat="server">
+
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-7769946090375939",
+        enable_page_level_ads: true
+    });
+</script>
+
+
+    <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Look & Run</title>
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+    <link rel="stylesheet" href="../../css/normalize.css" />
+    <link rel="stylesheet" href="../../css/new.css" />
+    <link rel="stylesheet" href="../../css/responsive.css" />
+
+    <link href="http://lookandrun.fi/js/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+
+    <script src="http://lookandrun.fi/js/jquery-1.12.3.min.js" type="text/javascript"></script>
+    <script src="http://lookandrun.fi/js/jquery.fancybox.js" type="text/javascript"></script>      
+    <script src="http://lookandrun.fi/js/jquery.bxslider.min.js" type="text/javascript" ></script>
+    <script src="http://lookandrun.fi/js/jquery.validate.min.js" type="text/javascript" ></script>
+    <script src="http://lookandrun.fi/js/scripts.js?v=002" type="text/javascript"></script>  
+
+    
+    <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-97238922-1', 'auto');
+            ga('send', 'pageview');
+
+    </script>
+   
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body runat="server">
+<form id="Form2" runat="server">
+
+    <div class="section header">
+        <div class="header-wrap">
+            <div class="land">
+                <div class="marker">
+                    <img src="../../img/map-marker.png" alt="marker"/>
+                </div>
+                <!-- languge: EN -->
+                <p id="P1" runat="server">Finland</p>
+                <!-- languge: RU -->
+                <p id="P2" runat="server">Финляндия</p>
+            </div>
+            <div class="logo-wrap">
+                <div class="logo">
+                    <a href="index.aspx"></a>
+                </div>
+            </div>
+            <div class="menu-wrap">
+                <div class="menu">
+                    <a href="#" class="menu-toggle"></a>
+                    <!-- languge: EN -->
+                    <ul id="Ul1" runat="server">
+                        <li><a href="index.aspx">About the game</a></li>
+                        <li><a href="Rules.aspx">Rules</a></li>
+                        <li><a href="Registration.aspx">Registration</a></li>
+                        <li><a href="LastResults.aspx">Previous results</a></li>
+                        <li><a href="ComingSoon.aspx">Coming games</a></li>
+                        <li><a href="Photos.aspx">Photos</a></li>
+                    </ul>
+                    <!-- languge: RU -->
+                    <ul id="Ul2" runat="server">
+                        <li><a href="index.aspx">Об игре</a></li>
+                        <li><a href="Rules.aspx">Правила</a></li>
+                        <li><a href="Registration.aspx">Регистрация</a></li>
+                        <li><a href="LastResults.aspx">Прошлые результаты</a></li>
+                        <li><a href="ComingSoon.aspx">Предстоящие игры</a></li>
+                        <li><a href="Photos.aspx">Фотографии</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section info">
+        <div class="info-wrap">
+            <div class="left">Former <img src="../../img/logo-dozor.png" alt=""/></div>
+            <div class="right">
+                <div class="create-today">
+                    <img src="../../img/logo-create-today.png" alt=""/><a href="http://createtoday.fi/" target="_blank">Create Today ry</a>
+                </div>       
+
+                <a href="#" id="enbut" class="lang en" runat="server"  onserverclick="SetEnglish_Click"></a>
+                <a href="#" id="rubut" runat="server" class="lang ru" onserverclick="SetRussian_Click"></a>
+            </div>
+        </div>
+    </div>
+    <div class="section banner">
+        <div class="inner">
+            <div class="banner-text">
+                <!-- languge: EN -->
+                <div id="Div1" class="container" runat="server">
+                    <p>The games 
+                        <br>are currently held only in private mode! 
+                        <br><span class="small">Book a game by e-mail.</span></p>
+                    <a href="ComingSoon.aspx" class="btn">Details</a>
+                    <div class="team-game">
+                        Team game in Finland
+                    </div>
+                </div>
+                <!-- languge: RU -->
+                <div id="Div2" class="container" runat="server">
+                    <p>Текущие квесты
+                        <br>проводятся только в частном формате! 
+                        <br><span class="small">Заказы принимаются по e-mail.</span></p>
+                    <a href="ComingSoon.aspx" class="btn">Подробнее</a>
+                    <div class="team-game">
+                        Team game in Finland
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section main" id="absdef" runat="server">
+        <div class="content">
+            <div class="inner">
+                
+                <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="inner">
+                <!-- languge: EN -->
+                <p id="P3" runat="server">Last winners:</p>
+                <!-- languge: RU -->
+                <p id="P4" runat="server" style="text-decoration: none;">Последние победители:</p>
+                <div class="winners" id="wins" runat="server">
+                    <div>                        
+                        <p style="text-decoration: none;"><%= First%></p>
+                        <a  href="http://lookandrun.fi/Albums/Winners/1.jpg?v=030" class="fancybox" rel="winners">
+                            <img src="http://lookandrun.fi/Albums/Winners/_1.jpg?v=030" class="img-responsive" alt="" />
+                        </a>
+                    </div>
+                    <div>
+                         <p><%= Second%></p>
+                        <a href="http://lookandrun.fi/Albums/Winners/2.jpg?v=030" class="fancybox" rel="winners">
+                            <img src="http://lookandrun.fi/Albums/Winners/_2.jpg?v=030" alt="" class="img-responsive"/>
+                        </a>
+                    </div>
+                    <div>
+                         <p><%= Third%></p>
+                        <a id="abc" href="http://lookandrun.fi/Albums/Winners/3.jpg?v=030" class="fancybox" rel="winners">
+                            <img src="http://lookandrun.fi/Albums/Winners/_3.jpg?v=030" alt="Responsive image" class="img-responsive"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="winners" runar="server">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- LR_first -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-7769946090375939"
+                         data-ad-slot="6689467605"
+                         data-ad-format="auto"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section video">
+        <div class="container">
+            <div class="slider-wrap">
+                <ul class="bxslider" id="bxslider">
+                    <li>
+                        <div class="video-wrap">
+                            <a href="https://youtu.be/OGUswlESpIk" class="fancyvideo">
+                              <%--  <img src="../../img/video-preview1.jpg" />--%>
+                                <div class="play-button"></div>
+                            </a>
+                        </div>                    
+                    </li>     
+                        <li>
+                        <div class="video-wrap">
+                            <a href="https://www.youtube.com/embed/xCqV4d7-fW8" class="fancyvideo">
+                                <img src="../../img/video-preview1.jpg" />
+                                <div class="play-button"></div>
+                            </a>
+                        </div>                    
+                    </li>              
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="section footer">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <img src="../../img/logo-main-dark.png" alt="" class="img-responsive"/>
+                </div>
+                <div class="column">
+                    <!-- languge: EN -->
+                    <div id="Div3" runat="server">
+                        <h5>Contact</h5>
+                        <a href="mailto:look.and.run.fi@gmail.com"><img class="dib mr05em" src="../../img/ico-mail.png" alt=""/>look.and.run.fi@gmail.com</a>
+                    </div>
+                    <!-- languge: RU -->
+                    <div id="Div4" runat="server">
+                        <h5>Контакты</h5>
+                        <a href="mailto:look.and.run.fi@gmail.com"><img class="dib mr05em" src="../../img/ico-mail.png" alt=""/>look.and.run.fi@gmail.com</a>
+                    </div>
+                </div>
+                <div class="column">
+                     <!-- languge: EN -->
+                    <div id="Div5" runat="server">
+                        <h5>Menu</h5>
+                        <ul>
+                        <li><a href="index.aspx">About the game</a></li>
+                        <li><a href="Rules.aspx">Rules</a></li>
+                        <li><a href="Registration.aspx">Registration</a></li>
+                        <li><a href="LastResults.aspx">Previous results</a></li>
+                        <li><a href="ComingSoon.aspx">Coming games</a></li>
+                        <li><a href="Photos.aspx">Photos</a></li>
+                        </ul>
+                    </div>
+                    <!-- languge: RU -->
+                    <div id="Div6" runat="server">
+                        <h5>Меню</h5>
+                        <ul>
+                            <li><a href="index.aspx">Об игре</a></li>
+                        <li><a href="Rules.aspx">Правила</a></li>
+                        <li><a href="Registration.aspx">Регистрация</a></li>
+                        <li><a href="LastResults.aspx">Прошлые результаты</a></li>
+                        <li><a href="ComingSoon.aspx">Предстоящие игры</a></li>
+                        <li><a href="Photos.aspx">Фотографии</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column">
+                    <!-- languge: EN -->
+                    <div id="Div7" runat="server">
+                        <h5>Questions?</h5>
+                        <p>
+                            If you have any questions leave us your phone number and we will contact you as soon as possible
+                        </p>
+                        <form action="/">
+                            <div class="input-group">
+                                <input id="phone" runat="server" type="text" name="mobile" required placeholder="Your phone number">
+                                <span class="input-group-btn">
+                                    <asp:Button ID="bSend" runat="server" type="submit" class="button" 
+                                    onclick="bSend_Click" />
+                        </span>
+                            </div>
+                        </form>
+                        <p class="font11">Your data will not be transferred to third parties</p>
+                    </div>
+                    <!-- languge: RU -->
+                    <div id="Div8" runat="server">
+                        <h5>Вопросы?</h5>
+                        <p>
+                            Если у вас есть вопросы - оставьте свой номер телефона и мы свяжемся с вами.
+                        </p>
+                        <form action="/">
+                            <div class="input-group">
+                                <input id="phone1" runat="server" type="text" required name="mobile" placeholder="Номер телефона">
+                                <span class="input-group-btn">
+                            <asp:Button ID="Button1" runat="server" type="submit" class="button" 
+                                    onclick="bSend_Click" />
+                        </span>
+                            </div>
+                        </form>
+                        <p class="font11">Данные не будут переданы третьим лицам</p>
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="social">
+                <div class="half">
+                    <p>© 2017. Look & run.fi</p>
+                </div>
+                <div class="half">
+                    <div class="icons">
+                        <a target="_blank" href="https://www.facebook.com/lookandrunfi/" class="ico fb"></a>
+                        <a target="_blank" href="https://www.instagram.com/lookandrun/" class="ico in"></a>
+                        <a target="_blank" href="http://vk.com/lookandrun" class="ico vk"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popups" runat="server">
+
+        <div class="popup" id="popup-sent">
+            <div class="popup-overlay"></div>
+            <div class="popup-window">
+                <div class="popup-close"></div>
+                <div class="popup-content">
+                    <h3 class="tc"><asp:Label ID="Label1" runat="server" meta:resourceKey="Thanks" /></h3>
+                    <p class="tc font18"><asp:Label ID="Label2" runat="server" meta:resourceKey="WeWillContact" /></p>
+                </div>
+            </div>
+        </div>
+        <div class="popup" id="popup-success">
+            <div class="popup-overlay"></div>
+            <div class="popup-window">
+                <div class="popup-close"></div>
+                <div class="popup-content">
+                    <h3 class="tc"><asp:Label ID="Label3" runat="server" meta:resourceKey="ThanksReg" /> </h3>
+                    <p class="tc font18"><asp:Label ID="Label4" runat="server" meta:resourceKey="SeeYou" /></p>
+                </div>
+            </div>
+        </div>
+        <div class="popup" id="popup-fail">
+            <div class="popup-overlay"></div>
+            <div class="popup-window">
+                <div class="popup-close"></div>
+                <div class="popup-content">
+                    <h3 class="tc"><asp:Label ID="Label5" runat="server" meta:resourceKey="Error" /></h3>
+                    <p class="tc font18"><asp:Label ID="Label6" runat="server" meta:resourceKey="Contact" /></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+</form>
+</body>
+
+</html>
